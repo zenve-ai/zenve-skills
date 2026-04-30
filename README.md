@@ -1,6 +1,6 @@
 # Zenve Skills
 
-A curated collection of skills for software to use with zenve cli.
+A curated collection of skills to use with zenve cli.
 
 ## Installation
 
