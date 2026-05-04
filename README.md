@@ -30,6 +30,7 @@ npx skills add zenve-ai/zenve-skills -g
 | [`fastapi-architect`](#fastapi-architect) | Audit any FastAPI project against architecture rules |
 | [`react-setup`](#react-setup) | Scaffold a production-ready React 19 + Vite SPA |
 | [`react-architect`](#react-architect) | Audit any React SPA project against architecture rules |
+| [`zenve-create-agent`](#zenve-create-agent) | Scaffold a new Zenve agent (manifest + SOUL + AGENTS + RUN + HEARTBEAT) |
 
 ---
 
@@ -124,6 +125,26 @@ npx skills add zenve-ai/zenve-skills --skill react-architect
 claude "review my components"
 claude "audit this react project"
 claude "does this follow react rules"
+```
+
+---
+
+## `zenve-create-agent`
+
+Scaffolds a new Zenve agent under `.zenve/agents/{slug}/` with the 5 required files: `manifest.yaml`, `SOUL.md`, `AGENTS.md`, `RUN.md`, `HEARTBEAT.md`.
+
+**Includes:** generic SOUL/AGENTS skeletons · `manifest.yaml` template · RUN + HEARTBEAT baselines with `RUN_OK` / `HEARTBEAT_OK` signal conventions · `code_pr` and `artifact_pr` modes · default model `claude-sonnet-4-6`
+
+**Install:**
+```bash
+npx skills add zenve-ai/zenve-skills --skill zenve-create-agent
+```
+
+**Usage:**
+```bash
+claude "create a new zenve agent called fastapi-dev"
+claude "scaffold a zenve agent for product management"
+claude "add a new agent in .zenve"
 ```
 
 ---
